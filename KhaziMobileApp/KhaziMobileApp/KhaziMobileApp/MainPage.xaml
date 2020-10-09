@@ -6,23 +6,30 @@
     <Grid>
         <Grid.RowDefinitions>
             <RowDefinition Height="*"/>
-            <RowDefinition Height="*"/>
-            <RowDefinition Height="*"/>
-            <RowDefinition Height="*"/>
+            <RowDefinition Height="2*"/>
+            <RowDefinition Height=".5*"/>
+            <RowDefinition Height="2*"/>
         </Grid.RowDefinitions>
 
         <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="*"/>
-            <ColumnDefinition Width="*"/>
             <ColumnDefinition Width="*"/>
             <ColumnDefinition Width="*"/>
         </Grid.ColumnDefinitions>
 
 
         <!--Add background image of Khazi eventually-->
-        <Image Source="" BackgroundColor="AntiqueWhite"
-               Grid.Column="0" Grid.Row="0" Grid.ColumnSpan="2"></Image>
-            
+        <Image Source= "theme2" BackgroundColor="SkyBlue"
+               Grid.Column="0" Grid.Row="0" Grid.ColumnSpan="3"></Image>
+
+        <Label Grid.Row="1" Grid.Column="0"  Text="Username"/>
+       
+        
+        <Button Grid.Row="2" Grid.Column="0" Text="Sign in"/>
+        <Button Grid.Row="2" Grid.Column="1" Text="Register"/>
+        <Label Grid.Row="3" Grid.Column="0" Grid.ColumnSpan="2" Text="No account yet? Click to register"/>
+        
+        
+
     </Grid>
 
 </ContentPage>
