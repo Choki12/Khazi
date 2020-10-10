@@ -16,7 +16,6 @@ namespace KhaziMobileApp
         {
             InitializeComponent();
 
-            SetLoginDetails("", "");
         }
 
         void OnSignInClicked(object sender, EventArgs args)
@@ -32,21 +31,23 @@ namespace KhaziMobileApp
             {
                 DisplayAlert("Alert", "Login Successful", "OK");
                 Navigation.PushAsync(new Dashboard());
-                
+                SetLoginDetails();
 
             }
             
         }
 
-        void SetLoginDetails(string Name, string Password)
+        void SetLoginDetails()
         {
-            UName.Text = Name;
-            UPassword.Text = Password;
+            UName.Text = "";
+            UPassword.Text = "";
+            UName.Text = null;
+            UPassword.Text = null;
         }
 
         void OnRegisterClicked(object sender, EventArgs args)
         {
-            
+            Navigation.PushAsync(new Registration());
         }
     }
 }

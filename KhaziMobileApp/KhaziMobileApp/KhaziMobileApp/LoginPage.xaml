@@ -12,6 +12,7 @@
             <RowDefinition Height="0.4*"/>
             <RowDefinition Height="0.4*"/>
             <RowDefinition Height="0.4*"/>
+            <RowDefinition Height="0.4*"/>
         </Grid.RowDefinitions>
 
         <Grid.ColumnDefinitions>
@@ -27,14 +28,14 @@
         <Label Text="Welcome to Khazi" Grid.Row="1"  Grid.Column="0" Grid.ColumnSpan="3" TextColor="Black" Padding="40"
                FontSize="Large" HorizontalOptions="Center"/>
 
-        <Label Text="Username" Grid.Row="2" Grid.Column="0" Grid.ColumnSpan="3" HorizontalOptions="Center"/>
-        <Entry x:Name="UName" Placeholder="Username" PlaceholderColor="Gray" Grid.Row="2" Grid.Column="0" Grid.ColumnSpan="3" HorizontalOptions="CenterAndExpand"/>
+        <Label Text="Username" Grid.Row="2" Grid.Column="0" Grid.ColumnSpan="3" HorizontalOptions="Start" FontSize="Medium" TextColor="Black"/>
+        <Entry  x:Name="UName" Placeholder="Enter username" PlaceholderColor="Gray" Grid.Row="2" Grid.Column="0" Grid.ColumnSpan="3" HorizontalOptions="Fill" FontSize="Small"/>
 
-        <Label Text="Password" Grid.Row="3" Grid.Column="0" Grid.ColumnSpan="3" HorizontalOptions="Center"/>
-        <Entry x:Name="UPassword" IsPassword="true"  Placeholder="Password" PlaceholderColor="Gray" Grid.Row="3" Grid.Column="0" Grid.ColumnSpan="3" HorizontalOptions="CenterAndExpand" />
+        <Label Text="Password" Grid.Row="3" Grid.Column="0" Grid.ColumnSpan="3" HorizontalOptions="Start" FontSize="Medium" TextColor="Black"/>
+        <Entry x:Name="UPassword" IsPassword="true"  Placeholder="Enter password" PlaceholderColor="Gray" Grid.Row="3" Grid.Column="0" Grid.ColumnSpan="3" HorizontalOptions="Fill" FontSize="Small"/>
 
-        <Button x:Name="btnSignIn"  Text="Sign in" Grid.Row="4" Grid.Column="0" Grid.ColumnSpan="3" BackgroundColor="LightSkyBlue" HorizontalOptions="Center" CornerRadius="15" WidthRequest="180" Clicked="OnSignInClicked"/>
-        <Button x:Name="btnRegister"  Text="Register" Grid.Row="5" Grid.Column="0" Grid.ColumnSpan="3" BackgroundColor="LightSkyBlue" HorizontalOptions="Center" CornerRadius="15" WidthRequest="180" Clicked="OnRegisterClicked"/>
+        <Button x:Name="btnSignIn"  Text="Sign in" Grid.Row="4" Grid.Column="0" Grid.ColumnSpan="3" BackgroundColor="LightSkyBlue" HorizontalOptions="Center" CornerRadius="30" WidthRequest="250" Clicked="OnSignInClicked"/>
+        <Button x:Name="btnRegister"  Text="Register" Grid.Row="5" Grid.Column="0" Grid.ColumnSpan="3" BackgroundColor="LightSkyBlue" HorizontalOptions="Center" CornerRadius="30" WidthRequest="250" Clicked="OnRegisterClicked"/>
         <Label Text="No account yet? Click to register" Grid.Row="6" Grid.Column="0" Grid.ColumnSpan="3" HorizontalOptions="Center" TextColor="Red"/>
 
     </Grid>

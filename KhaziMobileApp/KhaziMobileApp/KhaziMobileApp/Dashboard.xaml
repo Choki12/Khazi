@@ -1,47 +1,67 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <TabbedPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="KhaziMobileApp.Dashboard">
-    <TabbedPage.ItemTemplate>
-        <DataTemplate>
-            <ContentPage Title="{Binding Name}" IconImageSource="">
-                <StackLayout Padding="5, 25">
-                    <Label Text="{Binding Name}"
-                 Font="Bold,Large"
-                 HorizontalOptions="Center" />
-                    <Image Source="{Binding PhotoUrl}"
-                 WidthRequest="200"
-                 HeightRequest="200" />
-                    <StackLayout Padding="50, 10">
-                        <StackLayout Orientation="Horizontal">
-                            <Label Text="Family:"
-                     HorizontalOptions="FillAndExpand" />
-                            <Label Text="{Binding Family}"
-                     Font="Bold,Medium" />
-                        </StackLayout>
-                        <StackLayout Orientation="Horizontal"
-                         IsVisible="{Binding Subfamily, Converter={StaticResource booleanConverter}}">
-                            <Label Text="Subfamily:"
-                     HorizontalOptions="FillAndExpand" />
-                            <Label Text="{Binding Subfamily}"
-                     Font="Bold,Medium" />
-                        </StackLayout>
-                        <StackLayout Orientation="Horizontal"
-                         IsVisible="{Binding Tribe, Converter={StaticResource booleanConverter}}">
-                            <Label Text="Tribe:"
-                      HorizontalOptions="FillAndExpand" />
-                            <Label Text="{Binding Tribe}"
-                     Font="Bold,Medium" />
-                        </StackLayout>
-                        <StackLayout Orientation="Horizontal">
-                            <Label Text="Genus:"
-                     HorizontalOptions="FillAndExpand" />
-                            <Label Text="{Binding Genus}"
-                     Font="Bold,Medium" />
-                        </StackLayout>
-                    </StackLayout>
-                </StackLayout>
-            </ContentPage>
-        </DataTemplate>
-    </TabbedPage.ItemTemplate>
+             x:Class="KhaziMobileApp.Dashboard"
+            Title="Dashboard">
+
+    <ContentPage Title="Device" BackgroundColor="FloralWhite">
+        <StackLayout>
+            <BoxView VerticalOptions="Fill" />
+
+        
+
+
+
+        </StackLayout>
+    </ContentPage>
+
+    <ContentPage Title="Contacts" BackgroundColor= "FloralWhite">
+        <StackLayout>
+            <BoxView VerticalOptions="Fill" />
+
+            <Label Text="Emergency Contacts" HorizontalOptions="Center" FontSize="Large" TextColor="LightSkyBlue"/>
+            <ListView>
+                <ListView.ItemsSource>
+                    <x:Array Type="{x:Type x:String}">
+                        <x:String>Lerato Mono - 0716721344</x:String>
+                        <x:String>Julia Mofokeng - 0841237765</x:String>
+                        <x:String>Bridget Styles - 0827765144</x:String>
+                        <x:String>Mary Kondo - 0812356744</x:String>
+                        <x:String>Tim Blake - 0812356744</x:String>
+                    </x:Array>
+                </ListView.ItemsSource>
+            </ListView>
+
+            <Label Text="GBV Hotline Contacts" HorizontalOptions="Center" FontSize="Large" TextColor="LightSkyBlue"/>
+
+            <ScrollView>
+                <ListView>
+                <ListView.ItemsSource>
+                    <x:Array Type="{x:Type x:String}">
+                        <x:String>POWA (Counseling)- 011 642 4345</x:String>
+                        <x:String>Thutuzela Care Centre - 0800 428 428</x:String>
+                        <x:String>GBV Hotline Please Call Me - *120*7867#</x:String>
+                        <x:String>GBV Hotline SMS (Disability) - 31531</x:String>
+                        <x:String>STOP Gender Violence Hotline - 0800 150 150</x:String>
+                        <x:String>Tears Foundation - 010 590 5920</x:String>
+
+                    </x:Array>
+                </ListView.ItemsSource>
+            </ListView>
+               
+
+            </ScrollView>
+            <Button x:Name="BtnCall1" Clicked="BtnCall_Click1" Text="Call" BackgroundColor="#71d349" TextColor="White"/>
+
+        </StackLayout>
+    </ContentPage>
+
+    <ContentPage Title="Panic Button" BackgroundColor= "FloralWhite">
+        <StackLayout>
+            <BoxView  VerticalOptions="Fill" />
+        </StackLayout>
+    </ContentPage>
+
+
+
 </TabbedPage>
