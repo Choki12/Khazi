@@ -28,10 +28,10 @@
         <Label Text="Welcome to Khazi" Grid.Row="1"  Grid.Column="0" Grid.ColumnSpan="3" TextColor="Black" Padding="40"
                FontSize="Large" HorizontalOptions="Center"/>
 
-        <Label Text="Username" Grid.Row="2" Grid.Column="0" Grid.ColumnSpan="3" HorizontalOptions="Start" FontSize="Medium" TextColor="Black"/>
+        <Label Text="Username" Grid.Row="2" Grid.Column="0" Grid.ColumnSpan="3" HorizontalOptions="Start" FontSize="Medium" TextColor="Gray"/>
         <Entry  x:Name="UName" Placeholder="Enter username" PlaceholderColor="Gray" Grid.Row="2" Grid.Column="0" Grid.ColumnSpan="3" HorizontalOptions="Fill" FontSize="Small"/>
 
-        <Label Text="Password" Grid.Row="3" Grid.Column="0" Grid.ColumnSpan="3" HorizontalOptions="Start" FontSize="Medium" TextColor="Black"/>
+        <Label Text="Password" Grid.Row="3" Grid.Column="0" Grid.ColumnSpan="3" HorizontalOptions="Start" FontSize="Medium" TextColor="Gray"/>
         <Entry x:Name="UPassword" IsPassword="true"  Placeholder="Enter password" PlaceholderColor="Gray" Grid.Row="3" Grid.Column="0" Grid.ColumnSpan="3" HorizontalOptions="Fill" FontSize="Small"/>
 
         <Button x:Name="btnSignIn"  Text="Sign in" Grid.Row="4" Grid.Column="0" Grid.ColumnSpan="3" BackgroundColor="LightSkyBlue" HorizontalOptions="Center" CornerRadius="30" WidthRequest="250" Clicked="OnSignInClicked"/>

@@ -1,9 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
+﻿
+using System;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
@@ -15,6 +11,12 @@ namespace KhaziMobileApp
         public Registration()
         {
             InitializeComponent();
+        }
+
+        void OnRegClicked(object sender, EventArgs args)
+        {
+            DisplayAlert("Alert", "Registration complete", "OK");
+            Navigation.PushAsync(new Dashboard());
         }
     }
 }

@@ -1,12 +1,54 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="KhaziMobileApp.Registration">
-    <ContentPage.Content>
-        <StackLayout>
-            <Image Source= "theme2" HorizontalOptions="Center" VerticalOptions="End" BackgroundColor="SkyBlue"
+             x:Class="KhaziMobileApp.Registration"
+            >
+
+    <ScrollView>
+        <Grid>
+
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="0.4*"/>
+                <RowDefinition Height="0.4*"/>
+                <RowDefinition Height="0.4*"/>
+
+
+            </Grid.RowDefinitions>
+
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+
+            
+            <Image Source= "background2"  Grid.ColumnSpan="3" Grid.RowSpan="8" HorizontalOptions="Fill" VerticalOptions="FillAndExpand" BackgroundColor="SkyBlue"
                ></Image>
 
-        </StackLayout>
-    </ContentPage.Content>
+            <Label Text="Khazi Registration" Grid.Row="0"  Grid.Column="0" Grid.ColumnSpan="3" TextColor="White" Padding="40"
+               FontSize="Large" HorizontalOptions="Center"/>
+
+
+            <Label Text="Create Username" Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="3" HorizontalOptions="Start" FontSize="Medium" TextColor="White"/>
+            <Entry  x:Name="UserName" Placeholder="Enter username" PlaceholderColor="White" Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="3" HorizontalOptions="Fill" FontSize="Small" TextColor="White"/>
+
+
+            <Label Text="Enter your name and surname" Grid.Row="2" Grid.Column="0" Grid.ColumnSpan="3" HorizontalOptions="Start" FontSize="Medium" TextColor="White"/>
+            <Entry  x:Name="UName" Placeholder="Enter name and surname" PlaceholderColor="White" Grid.Row="2" Grid.Column="0" Grid.ColumnSpan="3" HorizontalOptions="Fill" FontSize="Small" TextColor="White"/>
+
+            <Label Text="Enter your email" Grid.Row="3" Grid.Column="0" Grid.ColumnSpan="3" HorizontalOptions="Start" FontSize="Medium" TextColor="White"/>
+            <Entry  x:Name="UEmail" Placeholder="Enter email" PlaceholderColor="White" Grid.Row="3" Grid.Column="0" Grid.ColumnSpan="3" HorizontalOptions="Fill" FontSize="Small" TextColor="White"/>
+
+            <Label Text="Enter your cellphone number" Grid.Row="4" Grid.Column="0" Grid.ColumnSpan="3" HorizontalOptions="Start" FontSize="Medium" TextColor="White"/>
+            <Entry  x:Name="UCell" Placeholder="Enter cellphone number" PlaceholderColor="White" Grid.Row="4" Grid.Column="0" Grid.ColumnSpan="3" HorizontalOptions="Fill" FontSize="Small" TextColor="White"/>
+
+            <Button x:Name="btnRegistered " Text="Complete registration" Grid.Row="5" Grid.Column="0" Grid.ColumnSpan="3" HorizontalOptions="Center" CornerRadius="35" WidthRequest="250" Clicked="OnRegClicked" BackgroundColor="Red" TextColor="Black"/>
+        </Grid>
+    </ScrollView>
+    
+
 </ContentPage>

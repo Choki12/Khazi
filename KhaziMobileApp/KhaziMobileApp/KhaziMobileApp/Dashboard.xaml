@@ -34,22 +34,20 @@
 
             <Label Text="GBV Hotline Contacts" HorizontalOptions="Center" FontSize="Large" TextColor="LightSkyBlue"/>
 
+
             <ScrollView>
                 <ListView>
-                <ListView.ItemsSource>
-                    <x:Array Type="{x:Type x:String}">
-                        <x:String>POWA (Counseling)- 011 642 4345</x:String>
-                        <x:String>Thutuzela Care Centre - 0800 428 428</x:String>
-                        <x:String>GBV Hotline Please Call Me - *120*7867#</x:String>
-                        <x:String>GBV Hotline SMS (Disability) - 31531</x:String>
-                        <x:String>STOP Gender Violence Hotline - 0800 150 150</x:String>
-                        <x:String>Tears Foundation - 010 590 5920</x:String>
-
-                    </x:Array>
-                </ListView.ItemsSource>
-            </ListView>
-               
-
+                    <ListView.ItemsSource>
+                        <x:Array Type="{x:Type x:String}">
+                            <x:String>POWA (Counseling)- 011 642 4345</x:String>
+                            <x:String>Thutuzela Care Centre - 0800 428 428</x:String>
+                            <x:String>GBV Hotline Please Call Me - *120*7867#</x:String>
+                            <x:String>GBV Hotline SMS (Disability) - 31531</x:String>
+                            <x:String>STOP Gender Violence Hotline - 0800 150 150</x:String>
+                            <x:String>Tears Foundation - 010 590 5920</x:String>
+                        </x:Array>
+                    </ListView.ItemsSource>
+                </ListView>
             </ScrollView>
             <Button x:Name="BtnCall1" Clicked="BtnCall_Click1" Text="Call" BackgroundColor="#71d349" TextColor="White"/>
 

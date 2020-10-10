@@ -1,12 +1,7 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
+using System.Collections.ObjectModel;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
-using System.Collections.ObjectModel;
 
 
 namespace KhaziMobileApp
@@ -30,11 +25,11 @@ namespace KhaziMobileApp
             ObservableCollection<Contact> Contacts = new ObservableCollection<Contact>();
 
             listView.ItemsSource = Contacts;
-            Contacts.Add(new Contact(){ Name = "Choki"});
-            Contacts.Add(new Contact() { Name = "Timothy"});
-            Contacts.Add(new Contact() { Name = "Martha"});
-            Contacts.Add(new Contact() { Name = "Dennis"});
-            Contacts.Add(new Contact() { Name = "Tom"});
+            Contacts.Add(new Contact() { Name = "Choki" });
+            Contacts.Add(new Contact() { Name = "Timothy" });
+            Contacts.Add(new Contact() { Name = "Martha" });
+            Contacts.Add(new Contact() { Name = "Dennis" });
+            Contacts.Add(new Contact() { Name = "Tom" });
 
         }
 

@@ -1,9 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-using System.Collections.ObjectModel;
-
-namespace KhaziMobileApp
+﻿namespace KhaziMobileApp
 {
     public class Contact
     {
@@ -11,7 +6,7 @@ namespace KhaziMobileApp
         public string Surname { get; set; }
         public string Cell { get; set; }
 
-        
+
 
     }
 
