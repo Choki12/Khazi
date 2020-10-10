@@ -1,56 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
-<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+<NavigationPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="KhaziMobileApp.MainPage">
 
-    <Grid>
-        
-        <Grid.RowDefinitions>
-            <RowDefinition Height="*"/>
-            <RowDefinition Height="*"/>
-            <RowDefinition Height="*"/>
-            <RowDefinition Height="*"/>
-            <RowDefinition Height="0.4*"/>
-            <RowDefinition Height="0.4*"/>
-        </Grid.RowDefinitions>
-
-        <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="*"/>
-            <ColumnDefinition Width="*"/>
-        </Grid.ColumnDefinitions>
-
-        <Image Source= "theme2" Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="3" BackgroundColor="SkyBlue"
-               ></Image>
-
-
-
-        <Label Text="Welcome to Khazi" Grid.Row="1"  Grid.Column="0" Grid.ColumnSpan="3" TextColor="Black" Padding="40"
-               FontSize="Large" HorizontalOptions="Center"/>
-
-        <Label Text="Username" Grid.Row="2" Grid.Column="0" Grid.ColumnSpan="3" HorizontalOptions="Center"/>
-        <Entry x:Name="UName" Placeholder="Username" PlaceholderColor="Gray" Grid.Row="2" Grid.Column="0" Grid.ColumnSpan="3" HorizontalOptions="Center"/> 
-
-            <Label Text="Password" Grid.Row="3" Grid.Column="0" Grid.ColumnSpan="3" HorizontalOptions="Center"/>
-        <Entry x:Name="UPassword"   Placeholder="Password" PlaceholderColor="Gray" Grid.Row="3" Grid.Column="0" Grid.ColumnSpan="3" HorizontalOptions="Center"/>
-
-        <Button x:Name="btnSignIn"  Text="Sign in" Grid.Row="4" Grid.Column="0" Grid.ColumnSpan="3" BackgroundColor="LightSkyBlue" HorizontalOptions="Center" WidthRequest="160"/>
-        <Button x:Name="btnRegister"  Text="Register" Grid.Row="5" Grid.Column="0" Grid.ColumnSpan="3" BackgroundColor="LightSkyBlue" HorizontalOptions="Center"  WidthRequest="160"/>
-        <Label Text="No account yet? Click to register" Grid.Row="6" Grid.Column="0" Grid.ColumnSpan="3" HorizontalOptions="Center" TextColor="Red"/>
-
-       
-    </Grid>
-
     
-        <!--Add background image of Khazi eventually-->
-       
- 
-       
-       
-             
-        
-        
-        
-
- 
-
-</ContentPage>
+</NavigationPage>

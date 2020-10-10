@@ -6,13 +6,17 @@ using System.Text;
 using System.Threading.Tasks;
 using Xamarin.Forms;
 
+
 namespace KhaziMobileApp
 {
-    public partial class MainPage : ContentPage
+    public partial class MainPage : NavigationPage
     {
         public MainPage()
         {
             InitializeComponent();
+
         }
+
+      
     }
 }
