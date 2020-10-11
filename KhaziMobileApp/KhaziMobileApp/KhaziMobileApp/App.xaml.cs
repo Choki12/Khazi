@@ -1,4 +1,5 @@
 ﻿using Xamarin.Forms;
+using Shiny;
 
 namespace KhaziMobileApp
 {

@@ -95,6 +95,15 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <PackageReference Include="Shiny.BluetoothLE">
+      <Version>2.0.0.2285-preview</Version>
+    </PackageReference>
+    <PackageReference Include="Shiny.Core">
+      <Version>1.2.0.1755</Version>
+    </PackageReference>
+    <PackageReference Include="Shiny.Notifications">
+      <Version>1.2.0.1755</Version>
+    </PackageReference>
     <PackageReference Include="SkiaSharp">
       <Version>1.68.0</Version>
     </PackageReference>

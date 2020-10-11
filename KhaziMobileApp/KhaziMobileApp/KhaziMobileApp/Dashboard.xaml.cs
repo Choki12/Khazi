@@ -6,6 +6,7 @@ using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
 
+
 namespace KhaziMobileApp
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
