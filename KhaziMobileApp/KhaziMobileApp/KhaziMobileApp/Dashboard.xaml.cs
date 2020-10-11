@@ -37,5 +37,11 @@ namespace KhaziMobileApp
         {
 
         }
+
+
+        void OnSwitchToggled(object sender, EventArgs args)
+        {
+
+        }
     }
 }

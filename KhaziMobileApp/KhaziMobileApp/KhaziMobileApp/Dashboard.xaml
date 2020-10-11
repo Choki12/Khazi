@@ -5,14 +5,32 @@
             Title="Dashboard">
 
     <ContentPage Title="Device" BackgroundColor="FloralWhite">
-        <StackLayout>
+        <Grid>
+
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="0.4*"/>
+                <RowDefinition Height="0.4*"/>
+                <RowDefinition Height="0.4*"/>
+
+
+            </Grid.RowDefinitions>
+
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+           
             <BoxView VerticalOptions="Fill" />
+           
+            <Switch Grid.Row="0" Grid.Column="1" Grid.ColumnSpan="3" Toggled="OnSwitchToggled" OnColor="LightSkyBlue" ThumbColor="LightGray" />
+            <Label Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="3" Text="Show device"  FontSize="Medium" TextColor="Black"/>
 
-        
-
-
-
-        </StackLayout>
+        </Grid>
     </ContentPage>
 
     <ContentPage Title="Contacts" BackgroundColor= "FloralWhite">

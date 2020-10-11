@@ -26,7 +26,7 @@
 
 
         <Label Text="Welcome to Khazi" Grid.Row="1"  Grid.Column="0" Grid.ColumnSpan="3" TextColor="Black" Padding="40"
-               FontSize="Large" HorizontalOptions="Center"/>
+               FontSize="Large" HorizontalOptions="Center" FontAttributes="Bold"/>
 
         <Label Text="Username" Grid.Row="2" Grid.Column="0" Grid.ColumnSpan="3" HorizontalOptions="Start" FontSize="Medium" TextColor="Gray"/>
         <Entry  x:Name="UName" Placeholder="Enter username" PlaceholderColor="Gray" Grid.Row="2" Grid.Column="0" Grid.ColumnSpan="3" HorizontalOptions="Fill" FontSize="Small"/>

@@ -29,8 +29,8 @@
             <Image Source= "background2"  Grid.ColumnSpan="3" Grid.RowSpan="8" HorizontalOptions="Fill" VerticalOptions="FillAndExpand" BackgroundColor="SkyBlue"
                ></Image>
 
-            <Label Text="Khazi Registration" Grid.Row="0"  Grid.Column="0" Grid.ColumnSpan="3" TextColor="White" Padding="40"
-               FontSize="Large" HorizontalOptions="Center"/>
+            <Label Text="Registration" Grid.Row="0"  Grid.Column="0" Grid.ColumnSpan="3" TextColor="White" Padding="40"
+               FontSize="Large" HorizontalOptions="Center" FontAttributes="Bold"/>
 
 
             <Label Text="Create Username" Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="3" HorizontalOptions="Start" FontSize="Medium" TextColor="White"/>
@@ -46,7 +46,13 @@
             <Label Text="Enter your cellphone number" Grid.Row="4" Grid.Column="0" Grid.ColumnSpan="3" HorizontalOptions="Start" FontSize="Medium" TextColor="White"/>
             <Entry  x:Name="UCell" Placeholder="Enter cellphone number" PlaceholderColor="White" Grid.Row="4" Grid.Column="0" Grid.ColumnSpan="3" HorizontalOptions="Fill" FontSize="Small" TextColor="White"/>
 
-            <Button x:Name="btnRegistered " Text="Complete registration" Grid.Row="5" Grid.Column="0" Grid.ColumnSpan="3" HorizontalOptions="Center" CornerRadius="35" WidthRequest="250" Clicked="OnRegClicked" BackgroundColor="Red" TextColor="Black"/>
+            <Label Text="Have you purchased a Khazi device?" Grid.Row="5" Grid.Column="0" Grid.ColumnSpan="3" HorizontalOptions="Start" FontSize="Medium" TextColor="White"/>
+            <RadioButton Grid.Row="6" Grid.Column="0" Grid.ColumnSpan="3" x:Name="rYes" Text="Yes"  TextColor="Green" />
+            <RadioButton Grid.Row="6" Grid.Column="1" Grid.ColumnSpan="2" x:Name="rNo" Text="No"  TextColor="Red"/>
+
+            <Button x:Name="btnRegistered " FontAttributes="Bold" Text="Complete registration"  Grid.Row="7" Grid.Column="0" Grid.ColumnSpan="3" HorizontalOptions="Center" CornerRadius="35" WidthRequest="250" Clicked="OnRegClicked" BackgroundColor="Orange" TextColor="White"/>
+
+            
         </Grid>
     </ScrollView>
     
