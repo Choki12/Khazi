@@ -5,31 +5,23 @@
             Title="Dashboard">
 
     <ContentPage Title="Device" BackgroundColor="FloralWhite">
-        <Grid>
-
-            <Grid.RowDefinitions>
-                <RowDefinition Height="*"/>
-                <RowDefinition Height="*"/>
-                <RowDefinition Height="*"/>
-                <RowDefinition Height="*"/>
-                <RowDefinition Height="*"/>
-                <RowDefinition Height="0.4*"/>
-                <RowDefinition Height="0.4*"/>
-                <RowDefinition Height="0.4*"/>
-
-
-            </Grid.RowDefinitions>
-
+        <Grid Margin="20,35,20,20">
             <Grid.ColumnDefinitions>
-                <ColumnDefinition Width="*"/>
-                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="0.5*" />
+                <ColumnDefinition Width="0.5*" />
             </Grid.ColumnDefinitions>
-           
-            <BoxView VerticalOptions="Fill" />
-           
-            <Switch Grid.Row="0" Grid.Column="1" Grid.ColumnSpan="3" Toggled="OnSwitchToggled" OnColor="LightSkyBlue" ThumbColor="LightGray" />
-            <Label Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="3" Text="Show device"  FontSize="Medium" TextColor="Black"/>
-
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+            </Grid.RowDefinitions>
+            <Label Text="Switch on device:" TextColor="Black" FontSize="Medium"
+                   VerticalOptions="Center"  />
+            <Switch x:Name="styleSwitch"
+                    Grid.Column="1"
+                    VerticalOptions="Center" Toggled="OnSwitchToggled" />
+            <ScrollView Grid.Row="1"
+                        Grid.ColumnSpan="2">
+            </ScrollView>
         </Grid>
     </ContentPage>
 
@@ -67,7 +59,9 @@
                     </ListView.ItemsSource>
                 </ListView>
             </ScrollView>
-            <Button x:Name="BtnCall1" Clicked="BtnCall_Click1" Text="Call" BackgroundColor="#71d349" TextColor="White"/>
+            <Label Text="Write phone number:" />
+            <Entry  x:Name="PhoneNumber" Placeholder="(222) 222-2222"/>
+            <Button x:Name="BtnCall" Clicked="BtnCall_Click" Text="Call" BackgroundColor="#71d349" TextColor="White"/>
 
         </StackLayout>
     </ContentPage>

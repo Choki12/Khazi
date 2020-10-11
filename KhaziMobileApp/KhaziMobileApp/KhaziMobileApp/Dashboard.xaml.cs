@@ -1,4 +1,6 @@
-﻿using System;
+﻿using Android.Telecom;
+using Plugin.Messaging;
+using System;
 using System.Collections.ObjectModel;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
@@ -33,15 +35,18 @@ namespace KhaziMobileApp
 
         }
 
-        void BtnCall_Click1(object sender, EventArgs args)
+        void BtnCall_Click(object sender, EventArgs args)
         {
-
+            var PlaceCall = CrossMessaging.Current.PhoneDialer;
+            if (PlaceCall.CanMakePhoneCall)
+                PlaceCall.MakePhoneCall(PhoneNumber.Text);
+            
         }
 
 
         void OnSwitchToggled(object sender, EventArgs args)
         {
-
+            //Logic for device
         }
     }
 }
