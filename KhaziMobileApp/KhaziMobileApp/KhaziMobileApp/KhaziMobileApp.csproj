@@ -1,4 +1,4 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
     <TargetFramework>netstandard2.0</TargetFramework>
@@ -13,7 +13,7 @@
   <ItemGroup>
     <PackageReference Include="Plugin.Fingerprint" Version="1.4.7" />
     <PackageReference Include="Shiny.BluetoothLE" Version="1.0.0.264-beta" />
-    <PackageReference Include="Shiny.Core" Version="1.1.0.1449" />
+    <PackageReference Include="Shiny.Core" Version="1.2.0.1686" />
     <PackageReference Include="Shiny.Locations" Version="1.0.0.264-beta" />
     <PackageReference Include="Shiny.Notifications" Version="1.0.0.264-beta" />
     <PackageReference Include="SkiaSharp" Version="1.68.0" />

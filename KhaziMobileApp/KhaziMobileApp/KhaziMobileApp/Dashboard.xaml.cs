@@ -4,8 +4,8 @@ using System;
 using System.Collections.ObjectModel;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
-
-
+using Shiny;
+using Shiny.Locations;
 
 namespace KhaziMobileApp
 {
@@ -15,7 +15,8 @@ namespace KhaziMobileApp
         public Dashboard()
         {
             InitializeComponent();
-
+            
+            
             var listView = new ListView();
             listView.ItemsSource = new string[]
             {
@@ -48,6 +49,61 @@ namespace KhaziMobileApp
         void OnSwitchToggled(object sender, EventArgs args)
         {
             //Logic for device
+            lblDevice1.IsVisible = true;
+            lblDevice2.IsVisible = true;
+            lblDevice3.IsVisible = false;
+            if (styleSwitch.IsToggled == false)
+            {
+                lblDevice1.IsVisible = false;
+                lblDevice2.IsVisible = false;
+                lblDevice3.IsVisible = true;
+            }
         }
+
+        //async protected override void OnAppearing()
+        //{
+        //    base.OnAppearing();
+        //    await ShinyHost.Resolve<IGeofenceManager>().RequestAccess();
+        //}
+
+        void OnBeepClicked(object sender, EventArgs args)
+        {
+            BeepRunning.IsRunning = true;
+            DisplayAlert("ALERT", "Your emergency contacts have been notified. Please press the stop button", "OK");
+
+
+        }
+
+        void OnStopClicked(object sender, EventArgs args)
+        {
+            BeepRunning.IsRunning = false;
+        }
+
+        //void wait(int milliseconds)
+        //{
+        //    var timer1 = new Xamarin.Forms.Timer();
+        //    if (milliseconds == 0 || milliseconds < 0) return;
+
+        //    // Console.WriteLine("start wait timer");
+        //    timer1.Interval = milliseconds;
+        //    timer1.Enabled = true;
+        //    timer1.Start();
+
+        //    timer1.Tick += (s, e) =>
+        //    {
+        //        timer1.Enabled = false;
+        //        timer1.Stop();
+        //        // Console.WriteLine("stop wait timer");
+        //    };
+
+        //    while (timer1.Enabled)
+        //    {
+        //        Application.DoEvents();
+        //    }
+        //}
+
     }
+
+
+
 }

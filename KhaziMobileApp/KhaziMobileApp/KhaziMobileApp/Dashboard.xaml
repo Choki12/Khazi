@@ -13,9 +13,16 @@
             <Grid.RowDefinitions>
                 <RowDefinition Height="Auto" />
                 <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
             </Grid.RowDefinitions>
             <Label Text="Switch on device:" TextColor="Black" FontSize="Medium"
                    VerticalOptions="Center"  />
+            <Label x:Name="lblDevice1" Grid.Row="1" Text="Name: Device G008 (Floral blue Wristband)" TextColor="Green" FontSize="Small"
+                   VerticalOptions="Center" IsVisible="false" />
+            <Label x:Name="lblDevice2" Grid.Row="2" Text="Status: On" TextColor="Green" FontSize="Small"
+                   VerticalOptions="Center" IsVisible="false" />
+            <Label x:Name="lblDevice3" Grid.Row="1" Text="Status: Off" TextColor="Red" FontSize="Small"
+                   VerticalOptions="Center" IsVisible="true" />
             <Switch x:Name="styleSwitch"
                     Grid.Column="1"
                     VerticalOptions="Center" Toggled="OnSwitchToggled" />
@@ -68,7 +75,17 @@
 
     <ContentPage Title="Panic Button" BackgroundColor= "FloralWhite">
         <StackLayout>
-            <BoxView  VerticalOptions="Fill" />
+            <Label Text="PRESS BEEP BUTTON"
+               FontSize="30"
+               FontAttributes="Bold"
+               HorizontalOptions="Center" 
+                   TextColor="Black"/>
+
+            <Button x:Name="btnBeep"  Text="Beep" FontAttributes ="Bold" TextColor="White" BackgroundColor="LightSkyBlue" VerticalOptions="Center" HorizontalOptions="Center" CornerRadius="200" WidthRequest="150" Clicked="OnBeepClicked"/>
+
+            <ActivityIndicator x:Name="BeepRunning" IsRunning="False"
+                           VerticalOptions="CenterAndExpand" />
+            <Button x:Name="btnStop"  Text="Stop" FontAttributes ="Bold" TextColor="White" BackgroundColor="Red" VerticalOptions="Center" HorizontalOptions="Center" CornerRadius="200" WidthRequest="150" Clicked="OnStopClicked"/>
         </StackLayout>
     </ContentPage>
 

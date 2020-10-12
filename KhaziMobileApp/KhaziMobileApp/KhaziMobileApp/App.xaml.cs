@@ -24,5 +24,9 @@ namespace KhaziMobileApp
         protected override void OnResume()
         {
         }
+
+       
+
+        
     }
 }
